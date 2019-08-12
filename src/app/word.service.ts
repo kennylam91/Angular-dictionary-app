@@ -11,6 +11,20 @@ export class WordService {
     {english: 'good morning', vietnamese: 'chao buoi sang'},
   ];
 
+  search(english: string): IWord {
+    // tslint:disable-next-line:no-shadowed-variable
+    if (!english) {
+      return null;
+    }
+    // tslint:disable-next-line:no-shadowed-variable
+    const word = this._wordList.find(word => word.english === english.toLowerCase());
+    if (word) {
+      return word;
+    } else {
+      return null;
+    }
+  }
+
 
   get wordList(): IWord[] {
     return this._wordList;

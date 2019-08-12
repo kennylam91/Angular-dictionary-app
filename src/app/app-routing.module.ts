@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: 'dictionary', component: DictionaryHomepageComponent,
     children: [
-      {path: ':word', component: DictionaryWordDetailComponent}]
+      {path: ':english', component: DictionaryWordDetailComponent}]
   },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
