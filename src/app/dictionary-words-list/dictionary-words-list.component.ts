@@ -22,10 +22,6 @@ export class DictionaryWordsListComponent implements OnInit {
       {searchEnglishWord: ['']}
     );
   }
-
-  // searchWord(word: string) {
-  //   console.log(word);
-  // }
   wordFilter(value: string) {
     console.log(value);
     this.wordList = this.wordService.filter(value);
