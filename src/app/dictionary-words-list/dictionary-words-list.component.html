@@ -1,4 +1,5 @@
-<h3>Dictionary Word List</h3>
-<div *ngFor="let word of wordList">
-  <p>{{word.english}}</p>
+<h4>Dictionary Word List</h4>
+<div *ngFor="let word of wordList; let i = index">
+  <p class="d-inline">{{i+1}}. </p>
+  <a [routerLink]="['/dictionary',word.english]">{{word.english}}</a>
 </div>
