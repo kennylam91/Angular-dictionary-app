@@ -6,7 +6,7 @@ import {DictionaryHomepageComponent} from './dictionary-homepage/dictionary-home
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'dictionary-homepage', component: DictionaryHomepageComponent},
+  {path: 'dictionary', component: DictionaryHomepageComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
