@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { DictionaryHomepageComponent } from './dictionary-homepage/dictionary-homepage.component';
+import { DictionaryWordDetailComponent } from './dictionary-word-detail/dictionary-word-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    DictionaryHomepageComponent,
+    DictionaryWordDetailComponent
   ],
   imports: [
     BrowserModule,
