@@ -7,8 +7,18 @@ import {IWord} from './dictionary-words-list/word';
 export class WordService {
   // tslint:disable-next-line:variable-name
   private _wordList: IWord[] = [
-    {english: 'hello', vietnamese: 'xin chao'},
-    {english: 'good morning', vietnamese: 'chao buoi sang'},
+    {english: 'hello', vietnamese: 'xin chào'},
+    {english: 'good morning', vietnamese: 'chào buổi sáng'},
+    {english: 'good afternoon', vietnamese: 'chào buổi trưa'},
+    {english: 'good evening', vietnamese: 'chào buổi tối'},
+    {english: 'good night', vietnamese: 'chúc ngủ ngon'},
+    {english: 'father', vietnamese: 'bố'},
+    {english: 'mother', vietnamese: 'mẹ'},
+    {english: 'brother', vietnamese: 'anh em'},
+    {english: 'sister', vietnamese: 'chị em'},
+    {english: 'go', vietnamese: 'đi'},
+    {english: 'come', vietnamese: 'đến'},
+
   ];
 
   search(english: string): IWord {
