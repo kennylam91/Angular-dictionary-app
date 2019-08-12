@@ -28,5 +28,7 @@ export class DictionaryWordsListComponent implements OnInit {
   // }
   wordFilter(value: string) {
     console.log(value);
+    this.wordList = this.wordService.filter(value);
+    console.log(this.wordService.wordList);
   }
 }

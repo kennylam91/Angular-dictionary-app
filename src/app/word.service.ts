@@ -35,6 +35,10 @@ export class WordService {
     }
   }
 
+  filter(value: string): IWord[] {
+    return this.wordList.filter(word => word.english.indexOf(value) !== -1);
+  }
+
 
   get wordList(): IWord[] {
     return this._wordList;
