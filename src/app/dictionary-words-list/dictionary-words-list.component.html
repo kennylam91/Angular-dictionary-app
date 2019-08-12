@@ -1,4 +1,8 @@
 <h4>Dictionary Word List</h4>
+<form [formGroup]="searchForm" (change)="wordFilter(searchForm.get('searchEnglishWord').value)">
+<input type="text" formControlName="searchEnglishWord">
+<button type="submit">Search</button>
+</form>
 <div *ngFor="let word of wordList; let i = index">
   <p class="d-inline">{{i+1}}. </p>
   <a [routerLink]="['/dictionary',word.english]">{{word.english}}</a>
