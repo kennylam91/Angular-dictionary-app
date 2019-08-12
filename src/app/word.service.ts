@@ -6,16 +6,17 @@ import {IWord} from './dictionary-words-list/word';
 })
 export class WordService {
   // tslint:disable-next-line:variable-name
-  private _wordList: IWord = [
+  private _wordList: IWord[] = [
     {english: 'hello', vietnamese: 'xin chao'},
     {english: 'good morning', vietnamese: 'chao buoi sang'},
   ];
 
-  get wordList(): IWord {
+
+  get wordList(): IWord[] {
     return this._wordList;
   }
 
-  set wordList(value: IWord) {
+  set wordList(value: IWord[]) {
     this._wordList = value;
   }
 

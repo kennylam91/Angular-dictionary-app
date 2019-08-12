@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {IWord} from './word';
+import {WordService} from '../word.service';
 
 @Component({
   selector: 'app-dictionary-words-list',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dictionary-words-list.component.css']
 })
 export class DictionaryWordsListComponent implements OnInit {
+  wordList: IWord[];
 
-  constructor() { }
+  constructor(private wordService: WordService) {
+  }
 
   ngOnInit() {
+    this.wordList = this.wordService.wordList;
   }
 
 }
